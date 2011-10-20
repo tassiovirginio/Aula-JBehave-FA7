@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="lib/hamcrest-all-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/jbehave-core-3.5.1.jar" sourcepath="/Users/eduardooliveira/.m2/repository/org/jbehave/jbehave-core/3.5.1/jbehave-core-3.5.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/jbehave-maven-plugin-3.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="lib/maven-artifact-3.0.3.jar"/>
+	<classpathentry kind="lib" path="lib/maven-plugin-api-3.0.3.jar"/>
+	<classpathentry kind="lib" path="lib/maven-project-2.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/mockito-all-1.9.0-rc1.jar"/>
+	<classpathentry kind="lib" path="lib/plexus-archiver-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/paranamer-2.3-debug.jar"/>
+	<classpathentry kind="lib" path="lib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-digester-1.6.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-validator-1.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/plexus-utils-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/freemarker-2.3.18.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
