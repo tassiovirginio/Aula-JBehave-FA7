@@ -4,7 +4,6 @@ import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import org.junit.Assert;
-import org.junit.experimental.categories.Categories.ExcludeCategory;
 
 import fa7.domain.Jogo;
 
