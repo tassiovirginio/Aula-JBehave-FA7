@@ -1,6 +1,8 @@
 package fa7.storys.steps;
 
+import org.jbehave.core.annotations.Alias;
 import org.jbehave.core.annotations.Given;
+import org.jbehave.core.annotations.Named;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import org.junit.Assert;
@@ -12,24 +14,28 @@ public class ClienteAdicionaProdutoAoCarrinhoSteps {
 	private Cliente clienteObj;
 	
 	@Given("que $nomeCliente esta logado")
-	public void estaLogado(String nomeCliente) {
+	@Alias("que <nomeCliente> esta logado")
+	public void estaLogado(@Named("nomeCliente")String nomeCliente) {
 		clienteObj = new Cliente();
 		clienteObj.setName(nomeCliente);
 		Assert.assertTrue(clienteObj.logar());
 	}
 	
-	@Given("que $cliente tem um carrinho")
-	public void temUmCarrinho(String cliente){
+	@Given("que $nomeCliente tem um carrinho")
+	@Alias("que <nomeCliente> tem um carrinho")
+	public void temUmCarrinho(@Named("nomeCliente")String cliente){
 		Assert.assertNotNull(clienteObj.getCarrinho());
 	}
 	
 	@When("um $produto eh adicionado ao carrinho")
-	public void adicionarBilheteAocarrinho(String produto){
+	@Alias("um <produto> eh adicionado ao carrinho")
+	public void adicionarBilheteAocarrinho(@Named("produto")String produto){
 		clienteObj.getCarrinho().add(produto);
 	}
 	
 	@Then("o $produto deve estar no carrinho")
-	public void verificarProdutoNoCarrinho(String produto) {
+	@Alias("o <produto> deve estar no carrinho")
+	public void verificarProdutoNoCarrinho(@Named("produto")String produto) {
 		Assert.assertTrue(clienteObj.getCarrinho().contains(produto));
 	}
 
