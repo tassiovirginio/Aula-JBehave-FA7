@@ -1,14 +1,14 @@
-Narrative:
-As a cliente
-I want to sacar dinheiro em um caixa eletr�nico
-In order to que n�o se tenha que esperar na fila
+Narrativa:
+Como um cliente
+Desejo sacar dinheiro em um caixa eletronico
+Para obter que não se tenha que esperar na fila
 
-Scenario: Cliente especial com saldo negativo
+Cenário: Cliente especial com saldo negativo
 
-Given um cliente especial com saldo atual de -200 reais
-When for solicitado um saque no valor 100 reais
-Then deve efetuar um saque e atualizar o saldo da conta para -300 reais
+Dado que um cliente especial com saldo atual de -200 reais
+Quando for solicitado um saque no valor 100 reais
+Então deve efetuar um saque e atualizar o saldo da conta para -300 reais
 
-When for solicitado um saque no valor 200 reais
-Then deve efetuar um saque e atualizar o saldo da conta para -500 reais
+Quando for solicitado um saque no valor 200 reais
+Então deve efetuar um saque e atualizar o saldo da conta para -500 reais
 
