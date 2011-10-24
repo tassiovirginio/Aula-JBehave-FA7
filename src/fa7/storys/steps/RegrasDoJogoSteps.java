@@ -11,7 +11,7 @@ public class RegrasDoJogoSteps {
 	private Jogo jogo;
 	private String contraSenha;
 	
-	@Given("um Jogo que a senha é $senha")
+	@Given("um Jogo que a senha Ã© $senha")
 	public void ObterLigador(String senha) {
 		jogo = new Jogo();
 		jogo.setSenha(senha);
