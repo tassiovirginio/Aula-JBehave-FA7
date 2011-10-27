@@ -20,7 +20,7 @@ import org.jbehave.core.steps.InstanceStepsFactory;
 public class JUnitStoryFA7 extends JUnitStory {
 	
 	protected Object object,objectSteps;
-	protected Locale locale;
+	protected Locale locale = new Locale("en");
 	
 	public Configuration configuration() {
 		
