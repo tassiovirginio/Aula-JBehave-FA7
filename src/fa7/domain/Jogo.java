@@ -3,12 +3,31 @@ package fa7.domain;
 public class Jogo {
 
 	private String senhaCorreta;
+	private String nomeJogador;
 
 	public void setSenha(String senha) {
 		this.senhaCorreta = senha;
 	}
 
+	public void setNomeJogador(String nomeJogador) {
+		this.nomeJogador = nomeJogador;
+	}
+
+	public String getNomeJogador() {
+		return nomeJogador;
+	}
+
 	public String ValidarSenha(String senhaInformada) {
+		
+		if(senhaInformada.equals("0000"))
+		{
+			return "Até a próxima!";
+		}
+		
+		if(senhaInformada.equals(senhaCorreta)){
+			return "Parabéns, " + nomeJogador + " você quebrou a senha!";
+		}
+		
 		if (ContemCaracterInvalido(senhaInformada))
 		{
 			return "Dígito Inválido!!";
@@ -57,8 +76,7 @@ public class Jogo {
 			senha.contains("6") ||
 			senha.contains("7") ||
 			senha.contains("8") ||
-			senha.contains("9") ||
-			senha.contains("0"))
+			senha.contains("9"))
 		{
 			return true;
 		}
