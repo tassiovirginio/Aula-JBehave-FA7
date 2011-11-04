@@ -4,6 +4,7 @@ public class Jogo {
 
 	private String senhaCorreta;
 	private String nomeJogador;
+	private int contador;
 
 	public void setSenha(String senha) {
 		this.senhaCorreta = senha;
@@ -19,8 +20,15 @@ public class Jogo {
 
 	public String ValidarSenha(String senhaInformada) {
 		
+		if(contador >= 10)
+		{
+			return "Foi exedido o numero maximo de tentativas.";
+		}
+		contador++;
+		
 		if(senhaInformada.equals("0000"))
 		{
+			contador = 0;
 			return "Até a próxima!";
 		}
 		
@@ -81,6 +89,22 @@ public class Jogo {
 			return true;
 		}
 		return false;
+	}
+
+	public String getSenhaCorreta() {
+		return senhaCorreta;
+	}
+
+	public void setSenhaCorreta(String senhaCorreta) {
+		this.senhaCorreta = senhaCorreta;
+	}
+
+	public int getContador() {
+		return contador;
+	}
+
+	public void setContador(int contador) {
+		this.contador = contador;
 	}
 
 }
